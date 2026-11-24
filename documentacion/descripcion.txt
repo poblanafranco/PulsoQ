@@ -1,0 +1,10 @@
+﻿Nombre del proyecto: PulsoQ
+
+Problema:
+En las salas de urgencias, la clasificacion de pacientes (triage) suele hacerse en papel o de forma manual. Esto provoca tiempos de espera largos, errores al priorizar casos graves y poca visibilidad del estado de cada paciente.
+
+Objetivo:
+Desarrollar una aplicacion web de triage digital que permita registrar, clasificar y priorizar a los pacientes de urgencias segun su nivel de gravedad, reduciendo tiempos de atencion y errores de priorizacion.
+
+Descripcion:
+PulsoQ es un sistema web en el que el personal de enfermeria registra los signos vitales y sintomas del paciente al llegar a urgencias. El sistema asigna un nivel de prioridad (por colores) y muestra al personal medico una fila de atencion ordenada y actualizada en tiempo real.
