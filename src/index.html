@@ -3,39 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PulsoQ</title>
+  <title>PulsoQ | Prioridad clínica en urgencias</title>
+  <style>
+    :root {
+      --primario: #2b4c7e;
+      --primario-oscuro: #1b2f50;
+      --acento: #e63946;
+      --fondo: #f3f6fb;
+      --texto: #1c2533;
+      --gris: #5a6577;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Segoe UI", Arial, sans-serif; background: var(--fondo); color: var(--texto); line-height: 1.6; }
+    .contenedor { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+    nav { background: var(--primario-oscuro); color: #fff; padding: 14px 0; }
+    nav .contenedor { display: flex; justify-content: space-between; align-items: center; }
+    nav .logo { font-size: 1.4rem; font-weight: 700; }
+    nav .logo span { color: var(--acento); }
+    nav a { color: #fff; text-decoration: none; margin-left: 18px; font-size: .95rem; }
+
+    header { background: linear-gradient(135deg, var(--primario), var(--primario-oscuro)); color: #fff; padding: 60px 0; text-align: center; }
+    header h1 { font-size: 2.4rem; margin-bottom: 12px; }
+    header p { max-width: 680px; margin: 0 auto 24px; opacity: .95; }
+    .boton { display: inline-block; background: var(--acento); color: #fff; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: transform .2s, box-shadow .2s; }
+    .boton:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.2); }
+
+    .banner { width: 100%; display: block; border-radius: 12px; margin: -30px 0 40px; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+
+    section { padding: 40px 0; }
+    section h2 { color: var(--primario-oscuro); font-size: 1.8rem; margin-bottom: 12px; text-align: center; }
+    .intro { text-align: center; color: var(--gris); max-width: 700px; margin: 0 auto 30px; }
+
+    .beneficios { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px; }
+    .tarjeta { background: #fff; padding: 24px; border-radius: 12px; border-left: 4px solid var(--acento); box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+    .tarjeta .icono { font-size: 2rem; }
+    .tarjeta h3 { margin: 8px 0; color: var(--primario-oscuro); }
+    .tarjeta p { color: var(--gris); font-size: .95rem; }
+
+    .contacto { background: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+    .contacto ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; text-align: center; }
+
+    footer { background: var(--primario-oscuro); color: #d3deef; text-align: center; padding: 18px 0; margin-top: 40px; font-size: .9rem; }
+  </style>
 </head>
 <body>
+  <nav>
+    <div class="contenedor">
+      <div class="logo">Pulso<span>Q</span></div>
+      <div>
+        <a href="#beneficios">Ventajas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
   <header>
-    <h1>PulsoQ</h1>
-    <h2>Atención a tiempo, cuando más importa</h2>
-  </header>
-
-  <main>
-    <img src="img/banner.svg" alt="Banner de PulsoQ: prioridad clínica en urgencias" width="100%">
-
-    <section>
+    <div class="contenedor">
+      <h1>Atención a tiempo, cuando más importa</h1>
       <p>
         PulsoQ es un sistema web de triage digital que permite al personal de urgencias
         capturar signos vitales, asignar un nivel de prioridad a cada paciente
         y consultar en tiempo real quién debe ser atendido primero.
       </p>
-      <p><strong>Conoce cómo PulsoQ puede ordenar y agilizar tu sala de urgencias.</strong></p>
-    </section>
+      <a href="#beneficios" class="boton">Comienza ahora</a>
+    </div>
+  </header>
 
-    <section>
+  <main class="contenedor">
+    <img class="banner" src="img/banner.svg" alt="Banner de PulsoQ: prioridad clínica en urgencias">
+
+    <section id="beneficios">
       <h2>¿Qué gana tu hospital con PulsoQ?</h2>
-      <p>
+      <p class="intro">
         Clasificar pacientes a mano consume tiempo y deja espacio para errores.
         PulsoQ automatiza la priorización para que los casos críticos se atiendan primero.
       </p>
-      <ul>
-        <li><strong>Clasificación más rápida:</strong> el registro del paciente toma solo unos minutos.</li>
-        <li><strong>Prioridad por colores:</strong> cada caso se identifica visualmente según su gravedad.</li>
-        <li><strong>Equipo coordinado:</strong> médicos y enfermería consultan la misma fila actualizada.</li>
-        <li><strong>Registros consultables:</strong> la información queda guardada para seguimiento y reportes.</li>
-      </ul>
+      <div class="beneficios">
+        <div class="tarjeta">
+          <div class="icono">&#9889;</div>
+          <h3>Clasificación rápida</h3>
+          <p>El registro del paciente toma solo unos minutos.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">&#127919;</div>
+          <h3>Prioridad por colores</h3>
+          <p>Cada caso se identifica visualmente según su gravedad.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">&#129309;</div>
+          <h3>Equipo coordinado</h3>
+          <p>Médicos y enfermería consultan la misma fila actualizada.</p>
+        </div>
+        <div class="tarjeta">
+          <div class="icono">&#128450;</div>
+          <h3>Registros consultables</h3>
+          <p>La información queda guardada para seguimiento y reportes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Hablemos</h2>
+      <p class="intro">¿Te interesa llevar PulsoQ a tu clínica u hospital? Contáctanos.</p>
+      <div class="contacto">
+        <ul>
+          <li>&#128231; info@pulsoq.com.mx</li>
+          <li>&#128222; 618 123 4567</li>
+          <li>&#128205; Av. Universidad 100, Durango, Dgo.</li>
+        </ul>
+      </div>
+      <p style="text-align:center; margin-top:24px;">
+        <a href="#" class="boton">Conoce más</a>
+      </p>
     </section>
   </main>
+
+  <footer>
+    &copy; 2026 PulsoQ &middot; Proyecto académico &mdash; Universidad Tecnológica de Durango
+  </footer>
 </body>
 </html>
