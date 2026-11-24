@@ -1,0 +1,20 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf1fb"/>
+      <stop offset="1" stop-color="#cfdcf0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="260" fill="url(#g)"/>
+  <polyline points="40,150 260,150 300,150 330,80 370,220 410,40 450,190 480,150 960,150"
+            fill="none" stroke="#e63946" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <g font-family="Segoe UI, Arial, sans-serif" font-weight="700">
+    <circle cx="640" cy="70" r="16" fill="#e63946"/>
+    <circle cx="690" cy="70" r="16" fill="#f4a261"/>
+    <circle cx="740" cy="70" r="16" fill="#f1c40f"/>
+    <circle cx="790" cy="70" r="16" fill="#2a9d8f"/>
+    <circle cx="840" cy="70" r="16" fill="#457b9d"/>
+    <text x="600" y="215" font-size="40" fill="#1b2f50">Pulso<tspan fill="#e63946">Q</tspan></text>
+    <text x="760" y="215" font-size="18" fill="#2b4c7e" font-weight="400">Prioridad clínica</text>
+  </g>
+</svg>
